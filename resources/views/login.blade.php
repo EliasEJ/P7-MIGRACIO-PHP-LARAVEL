@@ -47,10 +47,10 @@
                     </div>
                         <div class="text-center mt-3">
                             <p><b>O</b></p>
-                            <button class="btn border">
+                            <a href="{{ route('login-google') }}" class="btn border">
                                 <img src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" alt="Google logo" width="20" height="20">
                                 <b>Inicia sessió amb Google</b>
-                            </button>
+                            </a>
                             <button class="btn btn-dark">
                                 <img src="https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png" alt="GitHub logo" width="20" height="20">
                                 <b>Inicia sessió amb GitHub</b>
