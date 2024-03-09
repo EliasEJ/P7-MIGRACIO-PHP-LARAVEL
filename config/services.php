@@ -34,7 +34,7 @@ return [
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => 'http://lvh.me/google-callback', 
+        'redirect' => 'http://p7-migracio-php-laravel.com/google-callback', 
     ],
 
 ];

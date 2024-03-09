@@ -11,7 +11,8 @@
             height: 1em;
         }
         div{
-            margin-top: 0.6rem;
+            margin-top: 0.3rem;
+            margin-bottom: 0.4rem;
         }
     </style>    
 </head>
