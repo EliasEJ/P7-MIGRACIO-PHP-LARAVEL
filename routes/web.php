@@ -50,4 +50,5 @@ Route::get ('/login-google', function () {
 
 Route::get('/google-callback', function () {
     $user = Socialite::driver('google')->user();
+    dd($user);
 })->name('google-callback');
