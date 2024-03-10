@@ -15,6 +15,14 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <style>
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 0.3rem;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -51,6 +59,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <img src="{{ Auth::user()->avatar}}" alt="Imatge de perfil">
                                     {{ Auth::user()->name }}
                                 </a>
 
