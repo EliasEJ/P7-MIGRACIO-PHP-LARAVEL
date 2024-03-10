@@ -27,11 +27,11 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nom</label>
-                                <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp">
+                                <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" value="{{ old('name') }}">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Correu electrònic</label>
-                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="{{ old('email') }}">
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña</label>

@@ -69,3 +69,7 @@ Route::get('/google-callback', function () {
 
     return redirect()->route('home');
 })->name('google-callback');
+
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile')->middleware('auth');
