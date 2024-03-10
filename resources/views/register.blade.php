@@ -27,20 +27,29 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nom</label>
-                                <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" value="{{ old('name') }}">
+                                <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" value="{{ old('name') }}" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Correu electrònic</label>
-                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="{{ old('email') }}">
+                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="{{ old('email') }}" required>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="password" name="password">
+                                <input type="password" class="form-control" id="password" name="password" required>
                             </div>
                             <div class="mb-3">
                                 <label for="password_confirmation" class="form-label">Confirma la contraseña</label>
-                                <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
+                                <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required>
                             </div>
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                             <button type="submit" class="btn btn-dark w-100"><b>Registra't</b></button>
                         </form>
                         <div class="text-center mt-3">

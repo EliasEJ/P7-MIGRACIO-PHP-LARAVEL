@@ -13,7 +13,7 @@ class LoginController extends Controller
     {
         $credentials = $request->validate([
             'email' => 'required|email',
-            'password' => 'required',
+            'password' => 'required|min:8',
         ]);
 
         $user = User::where('email', $credentials['email'])->first();
