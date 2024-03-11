@@ -49,6 +49,13 @@ Route::get('/password/reset/{token}', 'App\Http\Controllers\ResetPasswordControl
 
 Route::post('/password/reset', 'App\Http\Controllers\ResetPasswordController@reset')->name('password.update');
 
+Route::post('/delete', function () {
+    /** @var \App\Models\User $user */ //Esto es para que el IDE sepa que $user es un objeto de la clase User y no salga en rojo
+    $user = Auth::user();
+    $user->delete();
+    return redirect('/');
+})->name('delete');
+
 Route::get ('/login-google', function () {
     return Socialite::driver('google')->redirect();
 })->name('login-google');

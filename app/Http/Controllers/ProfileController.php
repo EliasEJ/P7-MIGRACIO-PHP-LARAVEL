@@ -12,6 +12,8 @@ class ProfileController extends Controller
 {
     public function update(Request $request)
     {
+        /** @var \App\Models\User $user */ //Esto es para que el IDE sepa que $user es un objeto de la clase User y no salga en rojo
+
         $user = Auth::user();
 
         $request->validate([
