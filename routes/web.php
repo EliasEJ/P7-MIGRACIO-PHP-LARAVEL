@@ -8,6 +8,7 @@ use App\Http\Controllers\ForgotPasswordController;
 use Laravel\Socialite\Facades\Socialite;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,8 @@ Route::post('/register', [RegisterController::class, 'register'])->name('registe
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::post('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
 Route::get('/forgotpassword', [ForgotPasswordController::class, 'index'])->name('forgotpassword');
 
