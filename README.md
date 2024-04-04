@@ -19,6 +19,12 @@ He pujat al repositori el fitxer `.env` amb les dades de configuració de la bas
 
 Si vols fer la comprovació de recuparació de contrasenya, caldrà que inciis sessió a la plataforma de proves de Mailtrap amb la compte de la qual vols fer aquesta comprovació.
 
+Si per algun motiu no pots visualitzar la pàgina correctament a nivell de estils, caldrà fes servir la comanda:
+
+```bash
+npm run dev
+```
+
 ## PUNTS REALITZATS
 
 - Part bàsica obligatòria [4 punts]
