@@ -43,4 +43,4 @@ Si vols fer la comprovació de recuparació de contrasenya, caldrà que inciis s
 
 ## AUTOR
 
-- **Elyass el Jerari** - [EliasEJ](
+- **Elyass el Jerari** - [EliasEJ](https://github.com/EliasEJ)
